@@ -26,7 +26,7 @@ import org.testng.annotations.Test;
 public class testing {
 
 	public static WebDriver driver;
-	public static String path = "C:\\Users\\Hi\\Desktop\\NeuralNexusLab.xlsx";
+	public static String path = "C:\\Users\\Hi\\Desktop\\excel\\NeuralNexusLab.xlsx";
 	public static FileInputStream fs;
 	public static FileOutputStream fos;
 	public static Workbook wb;
