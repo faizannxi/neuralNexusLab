@@ -1,5 +1,3 @@
-package nexus.neural;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -25,10 +23,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class NexusTesting {
+public class testing {
 
 	public static WebDriver driver;
-	public static String path = "C:\\Users\\Hi\\Desktop\\excel\\NeuralNexusLab.xlsx";
+	public static String path = "C:\\Users\\Hi\\Desktop\\NeuralNexusLab.xlsx";
 	public static FileInputStream fs;
 	public static FileOutputStream fos;
 	public static Workbook wb;
@@ -37,7 +35,6 @@ public class NexusTesting {
 	@BeforeTest
 	public void setUp() throws IOException {
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
 		fs = new FileInputStream(path);
 		wb = new XSSFWorkbook(fs);
 		sheet1 = wb.getSheetAt(0);

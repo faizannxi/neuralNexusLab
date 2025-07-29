@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="nexus.neural.NexusTesting">
+      <class name="testing">
         <methods>
-          <include name="setUp"/>
+          <include name="runAllTests"/>
           <include name="tearDown"/>
-          <include name="Test7"/>
-          <include name="Test6"/>
-          <include name="Test9"/>
-          <include name="Test8"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- nexus.neural.NexusTesting -->
+      </class> <!-- testing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
